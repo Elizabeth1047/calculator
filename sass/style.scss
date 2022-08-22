@@ -1,0 +1,128 @@
+$black:black;
+$milk:rgb(226, 223, 223);
+$Dbrown:rgb(15, 15, 15);
+$Dmilk:rgb(238, 235, 235);
+$num:40px;
+$numb:15px;
+$number:25px;
+$bshadoww:4px 4px $white;
+$bshadow:5px 5px $black;
+$white:white;
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  background-color: $milk;
+
+  .general {
+  width: 80%;
+  margin:2vh auto 0 auto;
+  max-width: 400px;
+
+  .container {
+  background-color: rgb(10, 10, 10);
+  border-radius: $num;
+  padding-top: $num;
+  color: $white;
+  box-shadow: 0px 0px 43px 17px rgb(153, 153, 153,1);
+
+    .flex {
+
+  .switches {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $numb;
+  gap: $numb;
+  background-color: $Dbrown;
+  width: 70px;
+  margin: 0 auto;
+  border-radius: $num;
+  
+
+  
+}
+.switches2 {
+  background-color: $Dmilk;
+
+  
+}
+.input {
+  padding: $numb;
+  background-color: $Dbrown;
+  border-radius: $num;
+  margin: $num 0px;
+  color: $white ;
+  
+
+}
+.input2 {
+  color: $black;
+  background-color: $Dmilk;
+  font-weight: bold;
+  
+  
+
+}
+.numbers {
+  background-color: $Dbrown;
+  border-radius: $num;
+  padding: 30px $numb;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+.padd {
+  padding: 15px;
+  font-size: $numb;
+  font-weight: bolder;
+  background-color: $Dbrown;
+  box-shadow: 2px 2px $black;
+  border-radius: $num;
+
+  &:hover{
+    box-shadow: $bshadow;
+    font-size: $number;
+  }
+
+#green {
+  color: rgb(38, 182, 146);
+}
+#red {
+  color: rgb(187, 92, 92);
+}
+
+
+}
+.padd2 {
+  background-color: $Dmilk;
+  box-shadow: 2px 2px $white;
+
+  &:hover{
+    box-shadow: $bshadoww;
+    font-size: $number;
+  }
+}
+
+}
+.numbers2 {
+  background-color: $Dmilk;
+}
+}
+  
+}
+.container2 {
+  background-color: $milk;
+  color: rgb(17, 17, 17);
+  
+}
+ 
+}
+}
+
+
