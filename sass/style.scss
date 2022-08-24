@@ -15,21 +15,20 @@ $white: white;
 }
 body {
   box-sizing: border-box;
-  background-color: $milk;
+  background-color: #958b8b;
 
   .general {
     width: 80%;
     margin: 2vh auto 0 auto;
     max-width: 400px;
-    
 
     .container {
       background-color: rgb(10, 10, 10);
       border-radius: $num;
       padding-top: $num;
       color: $white;
-      box-shadow: 0px 0px 43px 17px rgb(153, 153, 153, 1);
-        height: 80vh;
+      box-shadow: 40px 80px 43px 17px rgb(153, 153, 153, 1);
+      height: 80vh;
       .flex {
         .switches {
           display: flex;
@@ -46,17 +45,22 @@ body {
           background-color: $Dmilk;
         }
         .input {
-          padding: $numb;
+          padding: 30px;
           background-color: $Dbrown;
           border-radius: $num;
-          margin: $num 0px;
+          margin: $num $number;
           color: $white;
           overflow: hidden;
+          box-shadow: inset 5px 5px 5px 5px $black;
+          text-align: right;
+          height: 30px;
+          font-size: $num;
         }
         .input2 {
           color: $black;
           background-color: $Dmilk;
           font-weight: bold;
+          box-shadow: inset 5px 5px 5px 5px $white;
           overflow: hidden;
         }
         .numbers {
@@ -69,16 +73,17 @@ body {
           align-items: center;
           text-align: center;
           gap: 10px;
-          
+          height: 50vh;
 
           .padd {
             padding: 15px;
             font-size: $numb;
             font-weight: bolder;
             background-color: $Dbrown;
-            box-shadow: 2px 2px $black;
+            box-shadow: inset 5px 5px $black;
             border-radius: $num;
             overflow: hidden;
+            margin: 6px;
 
             &:hover {
               box-shadow: $bshadow;
@@ -86,16 +91,10 @@ body {
               overflow: hidden;
             }
 
-            #green {
-              color: rgb(38, 182, 146);
-            }
-            #red {
-              color: rgb(187, 92, 92);
-            }
           }
           .padd2 {
             background-color: $Dmilk;
-            box-shadow: 2px 2px $white;
+            box-shadow: inset 2px 2px 2px 2px $white;
             overflow: hidden;
 
             &:hover {
@@ -115,6 +114,12 @@ body {
       color: rgb(17, 17, 17);
     }
   }
+}
+#green {
+  color: rgb(38, 182, 146);
+}
+#red {
+  color: rgb(187, 92, 92);
 }
 
 //

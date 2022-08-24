@@ -3,7 +3,7 @@ const switches = document.getElementById("switches");
 const numbers = document.getElementById("numbers");
 const padd = Array.from(document.getElementsByClassName("padd"));
 const input = document.getElementById("input");
-console.log(padd);
+
 
 switches.addEventListener("click", (e) => {
   switches.classList.toggle("switches2");
@@ -15,7 +15,10 @@ switches.addEventListener("click", (e) => {
   });
 });
 
+
+
 padd.forEach((pad) => {
+  
   pad.addEventListener("click", (e) => {
     switch (e.target.innerText) {
       case "AC":
@@ -26,6 +29,9 @@ padd.forEach((pad) => {
         break;
       default:
         input.innerText += pad.innerText;
+        
     }
+   
+
   });
 });
