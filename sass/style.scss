@@ -19,7 +19,7 @@ body {
 
   .general {
     width: 80%;
-    margin: 2vh auto 0 auto;
+    margin: 0 auto 0 auto;
     max-width: 400px;
 
     .container {
@@ -45,16 +45,20 @@ body {
           background-color: $Dmilk;
         }
         .input {
-          padding: 30px;
+          padding: 30px 40px 60px 40px;
           background-color: $Dbrown;
-          border-radius: $num;
+            border-radius: $num;
           margin: $num $number;
           color: $white;
           overflow: hidden;
+          // text-overflow: ellipsis;
           box-shadow: inset 5px 5px 5px 5px $black;
           text-align: right;
           height: 30px;
-          font-size: $num;
+          font-size: $number;
+          width: 85%;
+          outline: none;
+          border: none;
         }
         .input2 {
           color: $black;

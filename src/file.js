@@ -4,7 +4,6 @@ const numbers = document.getElementById("numbers");
 const padd = Array.from(document.getElementsByClassName("padd"));
 const input = document.getElementById("input");
 
-
 switches.addEventListener("click", (e) => {
   switches.classList.toggle("switches2");
   container.classList.toggle("container2");
@@ -15,23 +14,24 @@ switches.addEventListener("click", (e) => {
   });
 });
 
-
-
 padd.forEach((pad) => {
-  
   pad.addEventListener("click", (e) => {
     switch (e.target.innerText) {
       case "AC":
         input.innerText = "";
         break;
       case "=":
-        input.innerText = eval(input.innerText);
+        try {
+          input.innerText = eval(input.innerText);
+        } catch {
+          input.innerText = "Error";
+        }
+
         break;
       default:
-        input.innerText += pad.innerText;
-        
+        if (input.innerText.length < 8) {
+          input.innerText += pad.innerText;
+        }
     }
-   
-
   });
 });
